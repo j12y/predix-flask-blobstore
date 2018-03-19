@@ -1,0 +1,14 @@
+---
+applications:
+- name: predixpy-flask-blobstore
+  buildpack: https://github.com/cloudfoundry/buildpack-python.git
+env:
+  PREDIX_DATA_BLOBSTORE_ACCESS_KEY_ID: AKIAIXIWL5V2W4FQ5CDQ
+  PREDIX_DATA_BLOBSTORE_BUCKET_NAME: bucket-def383f0-d95e-41ce-83a5-9b3c42c29757
+  PREDIX_DATA_BLOBSTORE_HOST: s3-us-west-2.amazonaws.com
+  PREDIX_DATA_BLOBSTORE_SECRET_ACCESS_KEY: p2QW8HY9dE49RgPT+mlURsbvl0ui1FtqX4l7jQ2q
+  PREDIX_DATA_BLOBSTORE_URL: https://bucket-def383f0-d95e-41ce-83a5-9b3c42c29757.s3-us-west-2.amazonaws.com
+  PREDIX_SECURITY_UAA_CLIENT_ID: my-client
+  PREDIX_SECURITY_UAA_CLIENT_SECRET: my-client-secret
+services:
+- foo-predix-blobstore-tiered
